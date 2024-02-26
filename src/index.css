@@ -26,6 +26,20 @@
   background-size: cover;
 }
 
+.popular_destination {
+  background-image: url(../src/assets/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.popular_destination-dark {
+  background-image: url(../src/assets/bg-dark.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .nav-link {
   display: inline-block;
   color: #000;
