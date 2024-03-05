@@ -12,6 +12,10 @@ export default {
         primary: "'Roboto', sans-serif",
         secondary: "'Poppins', sans-serif",
       },
+      colors: {
+        primary: "#8b3eea",
+        secondary: "#2b2540",
+      },
     },
   },
   plugins: [import("flowbite/plugin")],
