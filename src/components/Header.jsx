@@ -16,9 +16,6 @@ import {
 import { useState } from "react";
 
 const Header = ({ darkMode, setDarkMode }) => {
-  const [showCategory, setShowCategory] = useState(false);
-  const [showPages, setShowPages] = useState(false);
-
   return (
     <div
       className={`absolute w-full z-50 ${
@@ -81,7 +78,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             {darkMode === "light" ? (
               <Button
                 gradientDuoTone="purpleToBlue"
-                className="cursor-pointer h-30"
+                className="cursor-pointer h-30 w-16"
                 onClick={() => setDarkMode("dark")}
               >
                 <FaMoon />
@@ -90,7 +87,7 @@ const Header = ({ darkMode, setDarkMode }) => {
               <Button
                 outline
                 gradientDuoTone="purpleToBlue"
-                className=" cursor-pointer h-30 focus:outline-none focus:none"
+                className=" cursor-pointer h-30 w-16 focus:outline-none focus:none"
                 onClick={() => setDarkMode("light")}
               >
                 <LuSunMedium className="dark:text-yellow-400" />
@@ -109,77 +106,57 @@ const Header = ({ darkMode, setDarkMode }) => {
               <p className="nav-link dark:text-white dark:after:bg-white font-primary cursor-pointer py-1 mx-2">
                 Home
               </p>
-              <div className="relative  z-50">
-                <p
-                  className="nav-link dark:text-white dark:after:bg-white font-primary cursor-pointer py-1 mx-2"
-                  onClick={() => {
-                    setShowCategory(!showCategory), setShowPages(false);
-                  }}
-                >
+              <div className="relative flex items-center h-[100px] z-50 group">
+                <p className="nav-link dark:text-white dark:after:bg-white font-primary cursor-pointer py-1 mx-2">
                   <div className="flex flex-row items-center gap-1">
                     Categories{" "}
                     <MdOutlineKeyboardArrowDown
-                      className={` ${
-                        showCategory
-                          ? "transition-all rotate-180 duration-300"
-                          : "transition-all rotate-0 duration-300"
-                      }`}
+                      className={
+                        "group-hover:transition-all group-hover:rotate-180 group-hover:duration-300 transition-all rotate-0 duration-300"
+                      }
                     />
                   </div>
                 </p>
 
-                {showCategory && (
-                  <div
-                    className={`absolute left-2 top-10 animate__animated bg-[#f7f7f7] animate__fadeIn animate__faster"
-                    }`}
-                  >
-                    <ul className="border border-gray-200 shadow-md w-40 rounded-md px-4 py-2">
-                      <li className="nav-link font-primary cursor-pointer w-full py-2">
-                        Categories 1
-                      </li>
-                      <li className="nav-link font-primary cursor-pointer w-full py-2">
-                        Categories 2
-                      </li>
-                      <li className="nav-link font-primary cursor-pointer w-full py-2">
-                        Categories 3
-                      </li>
-                    </ul>
-                  </div>
-                )}
+                <div className=" opacity-0 group-hover:opacity-100 transition-all ease-linear duration-300 absolute left-2 top-20  bg-[#f7f7f7]  ">
+                  <ul className="border border-gray-200 shadow-md w-40 rounded-md px-4 py-2">
+                    <li className="nav-link font-primary cursor-pointer w-full py-2">
+                      Categories 1
+                    </li>
+                    <li className="nav-link font-primary cursor-pointer w-full py-2">
+                      Categories 2
+                    </li>
+                    <li className="nav-link font-primary cursor-pointer w-full py-2">
+                      Categories 3
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div className="relative">
-                <p
-                  className="nav-link dark:text-white dark:after:bg-white font-primary cursor-pointer py-1 mx-2"
-                  onClick={() => {
-                    setShowPages(!showPages), setShowCategory(false);
-                  }}
-                >
+              <div className="relative flex items-center h-[100px] z-50 group">
+                <p className="nav-link dark:text-white dark:after:bg-white font-primary cursor-pointer py-1 mx-2">
                   <div className="flex flex-row items-center gap-1">
-                    Pages
+                    Pages{" "}
                     <MdOutlineKeyboardArrowDown
-                      className={` ${
-                        showPages
-                          ? "transition-all rotate-180 duration-300"
-                          : "transition-all rotate-0 duration-300"
-                      }`}
+                      className={
+                        "group-hover:transition-all group-hover:rotate-180 group-hover:duration-300 transition-all rotate-0 duration-300"
+                      }
                     />
                   </div>
                 </p>
 
-                {showPages && (
-                  <div
-                    className={`absolute left-2 top-10 animate__animated bg-[#f7f7f7] animate__fadeIn animate__faster"
-                    }`}
-                  >
-                    <ul className="border border-gray-200 shadow-md rounded-md  px-4 py-2">
-                      <li className="">asd</li>
-                      <li className="">asdasd</li>
-                      <li className="">asdasdasd</li>
-                      <li className="">asdasdasdasd</li>
-                      <li className="">asdasdasdasdasd</li>
-                    </ul>
-                  </div>
-                )}
+                <div className=" opacity-0 group-hover:opacity-100 transition-all ease-linear duration-300 absolute left-2 top-20  bg-[#f7f7f7]  ">
+                  <ul className="border border-gray-200 shadow-md w-40 rounded-md px-4 py-2">
+                    <li className="nav-link font-primary cursor-pointer w-full py-2">
+                      Pages 1
+                    </li>
+                    <li className="nav-link font-primary cursor-pointer w-full py-2">
+                      Pages 2
+                    </li>
+                    <li className="nav-link font-primary cursor-pointer w-full py-2">
+                      Pages 3
+                    </li>
+                  </ul>
+                </div>
               </div>
               <p className="nav-link dark:text-white dark:after:bg-white font-primary cursor-pointer py-1 mx-2">
                 News
