@@ -28,13 +28,13 @@ const NavBar = () => {
 
             <div className="invisible group-hover:visible absolute -z-50 opacity-0 group-hover:opacity-100 transition-all ease-linear duration-300  left-2 top-20  bg-[#f7f7f7]">
               <ul className="border border-gray-200 shadow-md w-40 rounded-md px-4 py-2">
-                <li className="nav-link font-primary cursor-pointer w-full py-2">
+                <li className="font-primary cursor-pointer w-full py-2">
                   Categories 1
                 </li>
-                <li className="nav-link font-primary cursor-pointer w-full py-2">
+                <li className="font-primary cursor-pointer w-full py-2">
                   Categories 2
                 </li>
-                <li className="nav-link font-primary cursor-pointer w-full py-2">
+                <li className="font-primary cursor-pointer w-full py-2">
                   Categories 3
                 </li>
               </ul>
@@ -53,16 +53,10 @@ const NavBar = () => {
             </p>
 
             <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all ease-linear duration-300 absolute left-2 top-20  bg-[#f7f7f7]">
-              <ul className="border border-gray-200 shadow-md w-40 rounded-md px-4 py-2">
-                <li className="nav-link font-primary cursor-pointer w-full py-2">
-                  Pages 1
-                </li>
-                <li className="nav-link font-primary cursor-pointer w-full py-2">
-                  Pages 2
-                </li>
-                <li className="nav-link font-primary cursor-pointer w-full py-2">
-                  Pages 3
-                </li>
+              <ul className="border border-gray-200 shadow-md w-40 rounded-md px-4 py-2 font-primary cursor-pointer">
+                <li className="w-full py-2">Pages 1</li>
+                <li className="w-full py-2">Pages 2</li>
+                <li className="w-full py-2">Pages 3</li>
               </ul>
             </div>
           </div>

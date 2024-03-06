@@ -11,10 +11,40 @@
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #3b82f6, #a855f7);
+  background: linear-gradient(160deg, #3b82f6, #a855f7);
   -webkit-background-clip: text; /* apply background clip */
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.active-menu {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background: linear-gradient(to right, transparent, transparent),
+    linear-gradient(160deg, #3b82f6, #a855f7);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.gradient-border:hover {
+  background: linear-gradient(to right, transparent, transparent),
+    linear-gradient(160deg, #3b82f6, #a855f7);
+  color: white;
+  padding: 8px 16px;
+}
+
+.gradient-border {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background: linear-gradient(to right, white, white),
+    linear-gradient(160deg, #a855f7, #3b82f6);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  cursor: pointer;
+  padding: 8px 16px;
 }
 
 .menu-bg {

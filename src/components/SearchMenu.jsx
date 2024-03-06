@@ -27,14 +27,16 @@ const SearchMenu = ({ darkMode }) => {
             <div className="flex items-center justify-around gap-2">
               {MenuData.map((data, index) => (
                 <div key={index}>
-                  <Button
-                    outline={activeMenu === data.title ? false : true}
-                    gradientDuoTone={"purpleToBlue"}
-                    className="w-[140px]"
+                  <div
+                    className={`flex flex-row items-center justify-center w-36 ${
+                      activeMenu === data.title
+                        ? "active-menu"
+                        : "gradient-border"
+                    }`}
                     onClick={() => setActiveMenu(data.title)}
                   >
                     {data.icon} {data.title}
-                  </Button>
+                  </div>
                 </div>
               ))}
             </div>
