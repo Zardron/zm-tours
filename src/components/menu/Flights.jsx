@@ -15,11 +15,7 @@ const Flights = ({ flightDetails }) => {
     }
   };
 
-  return (
-    <div className="flex flex-row items-center justify-between gap-8 mt-4">
-      {renderComponent(flightDetails)}
-    </div>
-  );
+  return renderComponent(flightDetails);
 };
 
 export default Flights;

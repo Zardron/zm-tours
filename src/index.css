@@ -10,6 +10,29 @@
   box-sizing: border-box;
 }
 
+.gradient-text {
+  background: linear-gradient(90deg, #3b82f6, #a855f7);
+  -webkit-background-clip: text; /* apply background clip */
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.menu-bg {
+  background-image: url(./assets/menu-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.menu-bg-dark {
+  background-image: url(./assets/menu-bg-dark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
 .banner {
   background-image: url(./assets/banner.png);
   position: relative;
@@ -28,16 +51,16 @@
 
 .popular_destination {
   background-image: url(../src/assets/bg.png);
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .popular_destination-dark {
   background-image: url(../src/assets/bg-dark.png);
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .nav-link {

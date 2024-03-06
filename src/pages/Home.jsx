@@ -3,10 +3,11 @@ import SearchMenu from "../components/SearchMenu";
 import Header from "../components/Header";
 
 const Home = ({ darkMode, setDarkMode }) => {
+  const props = { darkMode, setDarkMode };
   return (
     <>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <SearchMenu />
+      <SearchMenu {...props} />
       <div
         className={`${
           darkMode === "light"
