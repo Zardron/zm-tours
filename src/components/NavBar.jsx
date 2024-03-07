@@ -15,7 +15,7 @@ const NavBar = () => {
             Home
           </p>
           <div className="relative flex items-center h-[100px] z-50 group">
-            <p className="nav-link dark:text-white dark:after:bg-white font-primary cursor-pointer py-1 mx-2">
+            <div className="nav-link dark:text-white dark:after:bg-white font-primary cursor-pointer py-1 mx-2">
               <div className="flex flex-row items-center gap-1">
                 Categories{" "}
                 <MdOutlineKeyboardArrowDown
@@ -24,7 +24,7 @@ const NavBar = () => {
                   }
                 />
               </div>
-            </p>
+            </div>
 
             <div className="invisible group-hover:visible absolute -z-50 opacity-0 group-hover:opacity-100 transition-all ease-linear duration-300  left-2 top-20  bg-[#f7f7f7]">
               <ul className="border border-gray-200 shadow-md w-40 rounded-md px-4 py-2">
@@ -41,7 +41,7 @@ const NavBar = () => {
             </div>
           </div>
           <div className="relative flex items-center h-[100px] z-50 group">
-            <p className="nav-link dark:text-white dark:after:bg-white font-primary cursor-pointer py-1 mx-2">
+            <div className="nav-link dark:text-white dark:after:bg-white font-primary cursor-pointer py-1 mx-2">
               <div className="flex flex-row items-center gap-1">
                 Pages{" "}
                 <MdOutlineKeyboardArrowDown
@@ -50,7 +50,7 @@ const NavBar = () => {
                   }
                 />
               </div>
-            </p>
+            </div>
 
             <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all ease-linear duration-300 absolute left-2 top-20  bg-[#f7f7f7]">
               <ul className="border border-gray-200 shadow-md w-40 rounded-md px-4 py-2 font-primary cursor-pointer">

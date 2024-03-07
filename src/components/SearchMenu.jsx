@@ -31,7 +31,9 @@ const SearchMenu = ({ darkMode }) => {
                     className={`flex flex-row items-center justify-center w-36 ${
                       activeMenu === data.title
                         ? "active-menu"
-                        : "gradient-border"
+                        : darkMode === "dark"
+                        ? "gradient-btn-dark"
+                        : "gradient-btn"
                     }`}
                     onClick={() => setActiveMenu(data.title)}
                   >
