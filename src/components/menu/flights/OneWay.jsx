@@ -51,8 +51,6 @@ const OneWay = () => {
                   selected={startDate}
                   onChange={(date) => setStartDate(date)}
                   showPreviousMonths={false}
-                  showMonthDropdown
-                  showYearDropdown
                   monthsShown={2}
                   dropdownMode="select"
                   todayButton="Today"

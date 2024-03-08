@@ -12,7 +12,7 @@ const Header = ({ darkMode, setDarkMode }) => {
   const screenSize = GetScreenSize();
   return (
     <div
-      className={`absolute w-full z-50 h-[500px] lg:h-screen ${
+      className={`absolute w-full h-[500px] lg:h-screen ${
         darkMode === "dark" ? "bg-[#222222] banner-dark" : "banner"
       } `}
     >

@@ -149,7 +149,6 @@
   font-family: "Roboto", sans-serif !important;
   font-size: 0.8rem;
   color: #000;
-  border-radius: 7px;
   display: inline-block;
   position: relative;
   line-height: initial;
@@ -158,36 +157,29 @@
 .react-datepicker__header {
   background: linear-gradient(180deg, transparent, transparent),
     linear-gradient(180deg, #a855f7, #3b82f6);
+  border-radius: 0px !important;
 }
 
 .react-datepicker__portal .react-datepicker__current-month {
   font-family: "Roboto", sans-serif !important;
-  color: black;
+  color: #fff;
   padding-top: 25px;
   font-size: 32px;
+  padding-bottom: 20px;
 }
 
-.react-datepicker__header__dropdown {
+.react-datepicker__day-names {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.react-datepicker__day-name {
   font-family: "Roboto", sans-serif !important;
-  position: absolute;
-  top: 10px;
-  right: -65px;
-  z-index: 999;
+  color: white;
+  font-weight: 500;
 }
 
-.react-datepicker__month-select,
-.react-datepicker__year-select {
-  padding: 5px;
-}
-
-.react-datepicker__month-select,
-.react-datepicker__year-select:focus {
-  outline: none;
-}
-
-.react-datepicker__month-dropdown-container--select,
-.react-datepicker__year-dropdown-container--select {
-  margin: 0;
+.react-datepicker__portal .react-datepicker__day-name {
+  line-height: 2rem;
 }
 
 .react-datepicker__navigation--previous {
@@ -222,6 +214,16 @@
   padding: 8px 16px;
   color: white;
   font-size: 16px;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
+  margin: 2px auto;
+  max-width: 20%;
+  border-radius: 5px;
+}
+
+.react-datepicker__today-button:hover {
+  border: 2px solid transparent;
+  background: linear-gradient(to right, white, white),
+    linear-gradient(160deg, #a855f7, #3b82f6);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  color: black;
 }
